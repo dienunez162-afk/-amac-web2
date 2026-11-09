@@ -4,7 +4,8 @@
 Roles:
 
 Diego 
--Crear repo
+- Crea el repo y las carpetas, y agrega a los compañeros como colaboradores.
+Hace variables.css, base.css y layout.css.
 
 Ricardo
 -
