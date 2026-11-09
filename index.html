@@ -26,8 +26,46 @@
       </nav>
     </div>
   </header>
+  <div class="titulo-azul">
+    <div class="contenedor">
+      <h1>Empleos para ti</h1>
+      <p>Encuentra trabajo fácil y rápido</p>
+    </div>
+  </div>
   <main id="principal" class="principal contenedor">
-    <h1>Empleos para ti</h1>
+    <form class="formulario" action="index.html" method="get">
+      <div class="campo">
+        <label for="buscar">Buscar por empleo, empresa o ubicación</label>
+        <input type="search" id="buscar" name="q" placeholder="Ej. administrativo, Softtek, Monterrey">
+      </div>
+      <details class="panel">
+        <summary>Filtrar resultados</summary>
+        <div class="panel-contenido">
+          <div class="campo">
+            <label for="categoria">Categoría</label>
+            <select id="categoria" name="categoria">
+              <option>Todas las áreas</option>
+              <option>Administración</option>
+              <option>Tecnología</option>
+              <option>Limpieza</option>
+              <option>Logística</option>
+              <option>Servicios</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="horario">Horario</label>
+            <select id="horario" name="horario">
+              <option>Cualquier horario</option>
+              <option>Matutino</option>
+              <option>Vespertino</option>
+              <option>Medio tiempo</option>
+              <option>Tiempo completo</option>
+            </select>
+          </div>
+        </div>
+      </details>
+      <button type="submit" class="boton boton-azul">Buscar empleos</button>
+    </form>  
   </main>
     <footer class="pie">
     <div class="contenedor">
