@@ -1,7 +1,7 @@
 # -amac-web Readme
 
 
-#Roles:
+Roles:
 
 Diego 
 -Crear repo
@@ -13,14 +13,14 @@ Emiliano
 -
 
 
-#Variables:
+Variables:
 
-#Tipografias:
+Tipografias:
 
-#Componentes reutilizables:
+Componentes reutilizables:
 
-#Capturas de pantalla(Index):
+Capturas de pantalla(Index):
 
 
 
-#Prueba Lighthouse:
+Prueba Lighthouse:
