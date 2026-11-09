@@ -49,7 +49,70 @@
         <input type="password" id="clave2" required>
       </div>
 
-	<button type="submit">Crear mi cuenta</button>
+      <h2>3. Datos personales</h2>
+      <div>
+        <label for="nombres">Nombre(s) *</label>
+        <input type="text" id="nombres" name="nombres" required>
+      </div>
+      <div>
+        <label for="paterno">Apellido paterno *</label>
+        <input type="text" id="paterno" name="paterno" required>
+      </div>
+      <div>
+        <label for="materno">Apellido materno</label>
+        <input type="text" id="materno" name="materno">
+      </div>
+      <div>
+        <label for="edad">Edad *</label>
+        <input type="number" id="edad" name="edad" required>
+      </div>
+      <div>
+        <label for="sexo">Sexo</label>
+        <select id="sexo" name="sexo">
+          <option>Mujer</option>
+          <option>Hombre</option>
+          <option>Prefiero no decir</option>
+        </select>
+      </div>
+      <div>
+        <label for="estudios">Máximo nivel de estudios</label>
+        <select id="estudios" name="estudios">
+          <option>Primaria</option>
+          <option>Secundaria</option>
+          <option>Preparatoria</option>
+          <option>Licenciatura</option>
+          <option>Otro</option>
+        </select>
+      </div>
+
+      <h2>4. Dirección</h2>
+      <div>
+        <label for="calle">Calle y número *</label>
+        <input type="text" id="calle" name="calle" required>
+      </div>
+      <div>
+        <label for="colonia">Colonia *</label>
+        <input type="text" id="colonia" name="colonia" required>
+      </div>
+
+      <h2>5. Experiencia laboral</h2>
+      <div>
+        <label for="exp">Describe tu experiencia laboral</label>
+        <textarea id="exp" name="exp" rows="4"></textarea>
+      </div>
+
+      <h2>6. Habilidades profesionales</h2>
+      <div>
+        <label for="hab">Habilidades profesionales</label>
+        <textarea id="hab" name="hab" rows="3"></textarea>
+        <p>Ejemplo: Excel, atención a clientes.</p>
+      </div>
+
+      <h2>7. Términos y privacidad</h2>
+      <div><input type="checkbox" id="terminos" name="terminos" required><label for="terminos">Acepto los Términos y Condiciones *</label></div>
+      <div><input type="checkbox" id="privacidad" name="privacidad" required><label for="privacidad">Acepto la Política de Privacidad *</label></div>
+
+      <button type="submit">Crear mi cuenta</button>
     </form>
   </main>
 
