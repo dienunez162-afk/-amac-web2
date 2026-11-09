@@ -12,7 +12,8 @@
 </head>
 <body>
   <a class="saltar" href="#principal">Saltar al contenido</a>
-    <header class="encabezado">
+
+  <header class="encabezado">
     <div class="contenedor fila">
       <a class="logo" href="index.html"><img src="img/logo.png" alt="AMAC, ir al inicio" width="103" height="38"></a>
       <a class="ayuda" href="tel:8100000000">Ayuda: 81 0000 0000</a>
@@ -26,8 +27,81 @@
       </nav>
     </div>
   </header>
+
+  <div class="banner">
+    <div class="contenedor">
+      <h1>Auxiliar administrativo</h1>
+    </div>
+  </div>
+
   <main id="principal" class="principal contenedor">
-    <h1>Auxiliar administrativo</h1>
+
+    <article class="tarjeta">
+      <div class="tarjeta-arriba">
+        <span class="logo-empresa">gc</span>
+        <p class="empresa">Grupo Cónsul <span class="nueva">NUEVA</span><span class="hora">Hace 2 horas</span></p>
+        <button type="button" class="guardar" aria-label="Guardar vacante"><img src="img/guardar.svg" alt=""></button>
+      </div>
+      <p class="lugar">Santa Catarina, N. L.</p>
+      <p class="sueldo">$10,000 – $12,000 / mes</p>
+      <ul class="etiquetas">
+        <li>Presencial</li>
+        <li>Tiempo completo</li>
+      </ul>
+
+      <div class="carrusel" tabindex="0" aria-label="Imágenes del lugar de trabajo">
+        <div class="imagen-carrusel">Imagen 1: oficina</div>
+        <div class="imagen-carrusel">Imagen 2: recepción</div>
+      </div>
+
+      <section class="seccion-detalle">
+        <h2>Descripción</h2>
+        <p>Apoyo en archivo, captura de datos y atención de llamadas en oficina.</p>
+      </section>
+
+      <section class="seccion-detalle">
+        <h2>Requisitos</h2>
+        <ul><li>Secundaria terminada</li><li>Manejo básico de computadora</li></ul>
+      </section>
+
+      <section class="seccion-detalle">
+        <h2>Prestaciones</h2>
+        <ul><li>Prestaciones de ley</li><li>Comedor</li></ul>
+      </section>
+
+      <section class="seccion-detalle">
+        <h2>Proceso de selección</h2>
+        <ol><li>Llamada de contacto</li><li>Entrevista presencial</li><li>Entrega de documentos</li></ol>
+      </section>
+
+      <a class="boton boton-azul" href="tel:8100000000">Llamar a la empresa: 81 0000 0000</a>
+    </article>
+
+    <div class="barra-postular">
+      <a class="boton boton-naranja" href="#exito">Postularme</a>
+    </div>
+
+    <div class="modal" id="exito" role="dialog" aria-labelledby="titulo-exito">
+      <div class="caja-modal">
+        <div class="palomita" aria-hidden="true">✓</div>
+        <h2 id="titulo-exito">Postulación exitosa</h2>
+        <p>Tu solicitud fue enviada correctamente. Revisa tus solicitudes para ver el estado.</p>
+        <a class="boton boton-naranja" href="mis-solicitudes.html">Ver solicitudes</a>
+        <a class="enlace-centro" href="#principal">Cerrar</a>
+      </div>
+    </div>
   </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p><strong>AMAC</strong> · Bolsa de trabajo para personas adultas mayores.</p>
+      <p>¿Dudas o problemas? Llama a un empleado de AMAC: <a href="tel:8100000000">81 0000 0000</a></p>
+      <div class="pie-enlaces">
+        <a href="index.html">Empleos</a>
+        <a href="registro-candidato.html">Crear cuenta</a>
+        <a href="https://www.amac.org.mx/donativos">Donativos</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
