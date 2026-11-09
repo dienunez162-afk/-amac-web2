@@ -6,7 +6,7 @@
   <title>Registro de candidato | AMAC</title>
 </head>
 <body>
-  <a href="#principal">Saltar al contenido</a>a
+  <a href="#principal">Saltar al contenido</a>
   <header>
     <div>
       <a href="index.html"><img src="img/logo.png" alt="Ir al inicio" width="103" height="38"></a>
@@ -26,9 +26,10 @@
     <h1>Registro de candidato</h1>
     <p>* Campo obligatorio</p>
     <form action="login.html" method="get">
-
-      <h2>1. Datos de contacto</h2>
+      <details open>
+      <summary>1. Datos de contacto</summary>
       <div>
+        <div>
         <label for="correo">Correo electrónico</label>
         <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
         <p>Se requiere al menos un medio de contacto.</p>
@@ -42,9 +43,12 @@
         <div><input type="radio" id="pref-correo" name="preferido"><label for="pref-correo">Correo electrónico</label></div>
         <div><input type="radio" id="pref-tel" name="preferido"><label for="pref-tel">Teléfono</label></div>
       </fieldset>
-
-      <h2>2. Contraseña</h2>
+      </div>
+      </details>
+      <details>
+      <summary>2. Contraseña</summary>
       <div>
+        <div>
         <label for="clave1">Contraseña *</label>
         <input type="password" id="clave1" required>
         <p>Mínimo 8 caracteres</p>
@@ -53,9 +57,12 @@
         <label for="clave2">Confirmar contraseña *</label>
         <input type="password" id="clave2" required>
       </div>
-
-      <h2>3. Datos personales</h2>
+      </div>
+      </details>
+      <details>
+      <summary>3. Datos personales</summary>
       <div>
+        <div>
         <label for="nombres">Nombre(s) *</label>
         <input type="text" id="nombres" name="nombres" required>
       </div>
@@ -89,9 +96,12 @@
           <option>Otro</option>
         </select>
       </div>
-
-      <h2>4. Dirección</h2>
+      </div>
+      </details>
+      <details>
+      <summary>4. Dirección</summary>
       <div>
+        <div>
         <label for="calle">Calle y número *</label>
         <input type="text" id="calle" name="calle" required>
       </div>
@@ -99,24 +109,34 @@
         <label for="colonia">Colonia *</label>
         <input type="text" id="colonia" name="colonia" required>
       </div>
-
-      <h2>5. Experiencia laboral</h2>
+      </div>
+      </details>
+      <details>
+      <summary>5. Experiencia laboral</summary>
       <div>
+        <div>
         <label for="exp">Describe tu experiencia laboral</label>
         <textarea id="exp" name="exp" rows="4"></textarea>
       </div>
-
-      <h2>6. Habilidades profesionales</h2>
+      </div>
+      </details>
+      <details>
+      <summary>6. Habilidades profesionales</summary>
       <div>
+        <div>
         <label for="hab">Habilidades profesionales</label>
         <textarea id="hab" name="hab" rows="3"></textarea>
         <p>Ejemplo: Excel, atención a clientes.</p>
       </div>
-
-      <h2>7. Términos y privacidad</h2>
-      <div><input type="checkbox" id="terminos" name="terminos" required><label for="terminos">Acepto los Términos y Condiciones *</label></div>
-      <div><input type="checkbox" id="privacidad" name="privacidad" required><label for="privacidad">Acepto la Política de Privacidad *</label></div>
-
+      </div>
+      </details>
+      <details>
+      <summary>7. Términos y privacidad</summary>
+      <div>
+        <div><input type="checkbox" id="terminos" name="terminos" required><label for="terminos">Acepto los Términos y Condiciones *</label></div>
+        <div><input type="checkbox" id="privacidad" name="privacidad" required><label for="privacidad">Acepto la Política de Privacidad *</label></div>
+      </div>
+      </details>
       <button type="submit">Crear mi cuenta</button>
     </form>
   </main>
