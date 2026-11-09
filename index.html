@@ -12,7 +12,8 @@
 </head>
 <body>
   <a class="saltar" href="#principal">Saltar al contenido</a>
-    <header class="encabezado">
+
+  <header class="encabezado">
     <div class="contenedor fila">
       <a class="logo" href="index.html"><img src="img/logo.png" alt="AMAC, ir al inicio" width="103" height="38"></a>
       <a class="ayuda" href="tel:8100000000">Ayuda: 81 0000 0000</a>
@@ -26,18 +27,23 @@
       </nav>
     </div>
   </header>
+
   <div class="titulo-azul">
     <div class="contenedor">
       <h1>Empleos para ti</h1>
       <p>Encuentra trabajo fácil y rápido</p>
     </div>
   </div>
+
   <main id="principal" class="principal contenedor">
+
+ 
     <form class="formulario" action="index.html" method="get">
       <div class="campo">
         <label for="buscar">Buscar por empleo, empresa o ubicación</label>
         <input type="search" id="buscar" name="q" placeholder="Ej. administrativo, Softtek, Monterrey">
       </div>
+
       <details class="panel">
         <summary>Filtrar resultados</summary>
         <div class="panel-contenido">
@@ -64,10 +70,24 @@
           </div>
         </div>
       </details>
+
       <button type="submit" class="boton boton-azul">Buscar empleos</button>
-    </form>  
-  </main>
+    </form>
+
+
+    <div class="resultados">
+      <h2>24 vacantes</h2>
+      <div class="campo">
+        <label for="orden">Ordenar por</label>
+        <select id="orden">
+          <option>Más recientes</option>
+          <option>Mayor sueldo</option>
+        </select>
+      </div>
+    </div>
+
     <ul class="lista">
+
       <li>
         <article class="tarjeta">
           <div class="tarjeta-arriba">
@@ -85,8 +105,7 @@
           <a class="boton boton-naranja" href="vacante.html">Ver y postularte</a>
         </article>
       </li>
-    </ul>
-        <!-- Tarjeta 2 -->
+
       <li>
         <article class="tarjeta">
           <div class="tarjeta-arriba">
@@ -105,7 +124,7 @@
         </article>
       </li>
 
-      <!-- Tarjeta 3 -->
+
       <li>
         <article class="tarjeta">
           <div class="tarjeta-arriba">
@@ -124,7 +143,6 @@
         </article>
       </li>
 
-      <!-- Tarjeta 4 -->
       <li>
         <article class="tarjeta">
           <div class="tarjeta-arriba">
@@ -143,7 +161,6 @@
         </article>
       </li>
 
-      <!-- Tarjeta 5 -->
       <li>
         <article class="tarjeta">
           <div class="tarjeta-arriba">
@@ -161,6 +178,7 @@
           <a class="boton boton-naranja" href="vacante.html">Ver y postularte</a>
         </article>
       </li>
+
       <li>
         <article class="tarjeta">
           <div class="tarjeta-arriba">
@@ -173,22 +191,3 @@
           <p class="sueldo">$9,000 – $10,500 / mes</p>
           <ul class="etiquetas">
             <li>Presencial</li>
-            <li>Matutino</li>
-          </ul>
-          <a class="boton boton-naranja" href="vacante.html">Ver y postularte</a>
-        </article>
-      </li>
-    </ul>
-    <footer class="pie">
-    <div class="contenedor">
-      <p><strong>AMAC</strong> · Bolsa de trabajo para personas adultas mayores.</p>
-      <p>¿Dudas o problemas? Llama a un empleado de AMAC: <a href="tel:8100000000">81 0000 0000</a></p>
-      <div class="pie-enlaces">
-        <a href="index.html">Empleos</a>
-        <a href="registro-candidato.html">Crear cuenta</a>
-        <a href="https://www.amac.org.mx/donativos">Donativos</a>
-      </div>
-    </div>
-  </footer>
-</body>
-</html>
