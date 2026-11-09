@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de candidato | AMAC</title>
+</head>
+<body>
+  <header>
+    <a href="index.html">AMAC</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Empleos</a></li>
+        <li><a href="mis-solicitudes.html">Solicitudes</a></li>
+        <li><a href="empresa-vacantes.html">Mi empresa</a></li>
+        <li><a href="login.html">Ingresar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Registro de candidato</h1>
+    <p>* Campo obligatorio</p>
+    <form action="login.html" method="get">
+
+      <h2>1. Datos de contacto</h2>
+      <div>
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+        <p>Se requiere al menos un medio de contacto.</p>
+      </div>
+      <div>
+        <label for="celular">Teléfono celular</label>
+        <input type="tel" id="celular" name="celular" placeholder="10 dígitos">
+      </div>
+      <fieldset>
+        <legend>Si das ambos, elige tu contacto preferido</legend>
+        <div><input type="radio" id="pref-correo" name="preferido"><label for="pref-correo">Correo electrónico</label></div>
+        <div><input type="radio" id="pref-tel" name="preferido"><label for="pref-tel">Teléfono</label></div>
+      </fieldset>
+
+      <h2>2. Contraseña</h2>
+      <div>
+        <label for="clave1">Contraseña *</label>
+        <input type="password" id="clave1" required>
+        <p>Mínimo 8 caracteres</p>
+      </div>
+      <div>
+        <label for="clave2">Confirmar contraseña *</label>
+        <input type="password" id="clave2" required>
+      </div>
+
+	<button type="submit">Crear mi cuenta</button>
+    </form>
+  </main>
+
+  <footer>
+    <p><strong>AMAC</strong> · Bolsa de trabajo para personas adultas mayores.</p>
+    <p>¿Dudas o problemas? Llama a un empleado de AMAC: <a href="tel:8100000000">81 0000 0000</a></p>
+    <div>
+      <a href="index.html">Empleos</a>
+      <a href="registro-candidato.html">Crear cuenta</a>
+      <a href="https://www.amac.org.mx/donativos">Donativos</a>
+    </div>
+  </footer>
+</body>
+</html>
