@@ -1,0 +1,1 @@
+Imágenes a usar
