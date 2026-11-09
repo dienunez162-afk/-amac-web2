@@ -1,0 +1,65 @@
+/* botones */
+.boton{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    min-height: 48px;
+    padding: 0.85rem 1.5rem;
+    font-size: var(--texto-base);
+    font-weight: bold;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.boton-azul{
+    background-color: var(--azul);
+    color: white;
+}
+
+.boton-azul:hover{
+    background-color: #161D32;
+}
+
+.boton-naranja{
+    background-color: var(--naranja);
+    color: white;
+}
+
+.boton-naranja:hover{
+    background-color: #8b351b;
+}
+
+.boton-texto{ /* botones como "Crear una cuenta" o "Ver mas empleos"*/
+    background-color: transparent;
+    color: var(--azul);
+    font-weight: normal;
+}
+
+.boton-texto:hover{
+    text-decoration: underline;
+    color: var(--azul);
+}
+
+/* tarjetas de vacantes */
+.tarjeta{
+    display: flex;
+    background-color: white;
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    padding: var(--espacio-l);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    gap: var(--espacio-m);
+}
+
+.tarjeta-arriba{
+    display: flex;
+    align-items: center;
+    gap: var(--espacio-m);
+}
+
+
+
