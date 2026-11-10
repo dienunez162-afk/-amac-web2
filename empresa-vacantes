@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis vacantes | AMAC</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&amp;display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor fila">
+      <a class="logo" href="index.html"><img src="img/logo.png" alt="AMAC, ir al inicio" width="103" height="38"></a>
+      <a class="ayuda" href="tel:8100000000">Ayuda: 81 0000 0000</a>
+      <nav class="menu" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html"><img src="img/empleos.svg" alt="">Empleos</a></li>
+          <li><a href="mis-solicitudes.html"><img src="img/solicitudes.svg" alt="">Solicitudes</a></li>
+          <li><a class="actual" href="empresa-vacantes.html" aria-current="page"><img src="img/empresa.svg" alt="">Mi empresa</a></li>
+          <li><a href="login.html"><img src="img/ingresar.svg" alt="">Ingresar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal" class="principal contenedor">
+    <h1>Mis vacantes</h1>
+    <div class="formulario">
+      <button type="button" class="boton boton-naranja">Publicar nueva vacante</button>
+
+      <details class="panel" open>
+        <summary>Auxiliar administrativo</summary>
+        <div class="panel-contenido">
+          <p class="lugar">Santa Catarina, N. L. · $10,000 – $12,000 / mes</p>
+          <p><span class="estado activa">Activa</span> Publicada el 01/11/2026 · 1 solicitud</p>
+          <h3>Prospectos</h3>
+          <article class="prospecto">
+            <h4>Gustavo Cerati</h4>
+            <p class="hora">Hace 2 horas</p>
+            <p><strong>Edad:</strong> 67 años</p>
+            <p><strong>Ubicación:</strong> Santa Catarina, N. L.</p>
+            <p><strong>Experiencia:</strong> Descripción breve de su experiencia.</p>
+            <button type="button" class="boton boton-azul">Ver CV</button>
+          </article>
+          <div class="acciones">
+            <button type="button" class="boton boton-borde">Editar</button>
+            <button type="button" class="boton boton-borde">Pausar</button>
+            <button type="button" class="boton boton-borde">Cerrar vacante</button>
+          </div>
+        </div>
+      </details>
+
+      <details class="panel">
+        <summary>Intendente general</summary>
+        <div class="panel-contenido">
+          <p class="lugar">Santa Catarina, N. L. · $10,000 – $12,000 / mes</p>
+          <p><span class="estado pausada">Pausada</span> Publicada el 20/10/2026 · 0 solicitudes</p>
+          <p class="vacio">Aún no hay solicitudes para esta vacante.</p>
+          <div class="acciones">
+            <button type="button" class="boton boton-borde">Editar</button>
+            <button type="button" class="boton boton-borde">Pausar</button>
+            <button type="button" class="boton boton-borde">Cerrar vacante</button>
+          </div>
+        </div>
+      </details>
+
+      <details class="panel">
+        <summary>Ayudante de carpintería</summary>
+        <div class="panel-contenido">
+          <p class="lugar">Santa Catarina, N. L. · $10,000 – $12,000 / mes</p>
+          <p><span class="estado cerrada">Cerrada</span> Publicada el 05/10/2026 · 0 solicitudes</p>
+          <p class="vacio">Aún no hay solicitudes para esta vacante.</p>
+          <div class="acciones">
+            <button type="button" class="boton boton-borde">Editar</button>
+            <button type="button" class="boton boton-borde">Pausar</button>
+            <button type="button" class="boton boton-borde">Cerrar vacante</button>
+          </div>
+        </div>
+      </details>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p><strong>AMAC</strong> · Bolsa de trabajo para personas adultas mayores.</p>
+      <p>¿Dudas o problemas? Llama a un empleado de AMAC: <a href="tel:8100000000">81 0000 0000</a></p>
+      <div class="pie-enlaces">
+        <a href="index.html">Empleos</a>
+        <a href="registro-candidato.html">Crear cuenta</a>
+        <a href="https://www.amac.org.mx/donativos">Donativos</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
