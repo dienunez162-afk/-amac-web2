@@ -56,6 +56,15 @@
   cursor: not-allowed;
 }
 
+.ver-mas {
+  text-align: center;
+  margin-top: var(--espacio-l);
+}
+
+.ver-mas .boton {
+  width: auto;
+}
+
 /* tarjetas de vacantes */
 .tarjeta{
     display: flex;
@@ -122,6 +131,8 @@
 
 .guardar{
     margin-left: auto;
+    min-width: 44px;
+    min-height: 44px;
     background: none;
     border: none;
     cursor: pointer;
@@ -167,6 +178,34 @@
     flex-direction: column;
     gap: var(--espacio-m);
     margin-bottom: var(--espacio-l);
+}
+
+.pendiente { 
+    background-color: #ffe3db; 
+    color: #8f2a13;
+    border-radius: var(--radio);
+    padding: 0.2rem ; 
+}
+.aceptada, .activa { 
+    background-color: #dcf3e3; 
+    color: #14532d; 
+    border-radius: var(--radio);
+    padding: 0.2rem ; 
+}
+.rechazada, .cerrada { 
+    background-color: 
+    #fbe0e0; 
+    color: #7f1d1d; 
+    border-radius: var(--radio);
+    padding: 0.2rem ; 
+}
+.pausada { 
+    background-color:
+    #eceff5; 
+    color: 
+    var(--azul); 
+    border-radius: var(--radio);
+    padding: 0.2rem ; 
 }
 
 .campo{
@@ -268,7 +307,6 @@ legend {
 .guardar img { 
     width: 24px; 
     height: 24px; 
-    object-fit: contain;
 }
 
 /* carrusel */
@@ -360,17 +398,17 @@ legend {
 
 /*prospectos */
 .prospecto {
-  background-color: white;
   border: 1px solid var(--borde);
   border-radius: var(--radio);
-  padding: var(--espacio-l);
+  padding: var(--espacio-m);
   margin-bottom: var(--espacio-m);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-s);
 }
 
 .prospecto h4 {
-  font-family: var(--fuente-titulos);
-  font-size: var(--texto-h2);
-  margin-bottom: var(--espacio-s);
+  font-size: 1.25rem;
 }
 
 .prospecto p {
@@ -385,23 +423,17 @@ legend {
 }
 
 .acciones .boton {
-  width: 100%;
+  width: auto;
+}
+
+.vacio{
+    text-align: center;
+    color: var(--gris-texto);
 }
 
 @media (min-width: 768px) {
   .imagen-carrusel {
     flex-basis: 45%;
   }
-  
-  .acciones {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: var(--espacio-m);
-  }
 
-  .acciones .boton {
-    width: auto;
-    flex: 1;
-  }
 }
