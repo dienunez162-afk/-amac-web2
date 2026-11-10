@@ -52,9 +52,11 @@ Plataforma de empleo para personas adultas mayores. Proyecto final, Entrega 2 (H
 
 # Capturas de pantalla (index)
 
-- Celular: (agregar captura)
-- Escritorio: (agregar captura)
+- Celular: 
+![alt text](image.png)
+- Escritorio: ![alt text](image-1.png)
 
 # Prueba Lighthouse
 
-- Accessibility: (agregar puntaje y captura)
+- Accessibility: ![alt text](image-2.png)
+Puntaje: 100
