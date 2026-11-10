@@ -7,9 +7,6 @@
 }
 
 html{
-    font-size: var(--texto-base);
-    font-family: var(--fuente-texto);
-    color: var(--azul);
     scroll-behavior: smooth;
 }
 
@@ -19,6 +16,12 @@ body{
     color: var(--azul);
     background-color: var(--fondo);
     line-height: 1.5;
+}
+
+/* títulos con Baskervville */
+h1, h2, h3, h4 {
+  font-family: var(--fuente-titulos);
+  line-height: 1.2;
 }
 
 /* foco visible */
@@ -57,4 +60,11 @@ a{
 img{
     max-width: 100%;
     height: auto;
+    object-fit: contain;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
+

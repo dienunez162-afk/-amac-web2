@@ -45,9 +45,24 @@
     color: var(--azul);
 }
 
+.boton-borde{ 
+    background-color: white;
+    color: var(--azul);
+    border: 2px solid var(--borde);
+}
+
 .boton[disabled] {
   opacity: 0.55;
   cursor: not-allowed;
+}
+
+.ver-mas {
+  text-align: center;
+  margin-top: var(--espacio-l);
+}
+
+.ver-mas .boton {
+  width: auto;
 }
 
 /* tarjetas de vacantes */
@@ -116,6 +131,8 @@
 
 .guardar{
     margin-left: auto;
+    min-width: 44px;
+    min-height: 44px;
     background: none;
     border: none;
     cursor: pointer;
@@ -163,6 +180,34 @@
     margin-bottom: var(--espacio-l);
 }
 
+.pendiente { 
+    background-color: #ffe3db; 
+    color: #8f2a13;
+    border-radius: var(--radio);
+    padding: 0.2rem ; 
+}
+.aceptada, .activa { 
+    background-color: #dcf3e3; 
+    color: #14532d; 
+    border-radius: var(--radio);
+    padding: 0.2rem ; 
+}
+.rechazada, .cerrada { 
+    background-color: 
+    #fbe0e0; 
+    color: #7f1d1d; 
+    border-radius: var(--radio);
+    padding: 0.2rem ; 
+}
+.pausada { 
+    background-color:
+    #eceff5; 
+    color: 
+    var(--azul); 
+    border-radius: var(--radio);
+    padding: 0.2rem ; 
+}
+
 .campo{
     display: flex;
     flex-direction: column;
@@ -172,6 +217,8 @@
 
 .campo label{
     font-weight: bold;
+    font-family: var(---fuente-texto);
+    font-size: var(--texto-base);
 }
 
 .campo input, .campo textarea, .campo select{
@@ -181,6 +228,11 @@
     border: 1px solid var(--borde);
     border-radius: var(--radio);
     font-size: var(--texto-base);
+}
+
+.campo textarea{
+    min-height: 100px;
+    resize: vertical;
 }
 
 fieldset{
@@ -200,16 +252,18 @@ legend {
   border-radius: var(--radio);
   padding: var(--espacio-m);
   margin-block: var(--espacio-m);
+  font-family: var(---fuente-texto);
 }
 
 .panel summary, details summary{
     font-weight: bold;
     cursor: pointer;
     font-size: var(---texto-base);
+    font-family: var(---fuente-texto);
     color: var(--azul);
 }
 
-.panel-contenido{
+.panel-contenido, details > div{
     display: flex;
     flex-direction: column;
     gap: var(--espacio-m);
@@ -278,6 +332,7 @@ legend {
 .seccion-detalle h2 {
   font-size: var(--texto-h2);
   margin-bottom: var(--espacio-s);
+  font-family: var(--fuente-titulos);
 }
 
 .seccion-detalle ul,
@@ -341,8 +396,44 @@ legend {
   text-decoration: underline;
 }
 
+/*prospectos */
+.prospecto {
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: var(--espacio-m);
+  margin-bottom: var(--espacio-m);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-s);
+}
+
+.prospecto h4 {
+  font-size: 1.25rem;
+}
+
+.prospecto p {
+  margin-bottom: var(--espacio-s);
+}
+
+.acciones {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-s);   
+  margin-top: var(--espacio-m);
+}
+
+.acciones .boton {
+  width: auto;
+}
+
+.vacio{
+    text-align: center;
+    color: var(--gris-texto);
+}
+
 @media (min-width: 768px) {
   .imagen-carrusel {
     flex-basis: 45%;
   }
+
 }
