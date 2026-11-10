@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: var(--texto-base);
+    font-family: var(--fuente-texto);
+    color: var(--azul);
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--fuente-texto);
+    font-size: var(--texto-base);
+    color: var(--azul);
+    background-color: var(--fondo);
+    line-height: 1.5;
+}
+
+/* foco visible */
+:focus-visible{
+    outline: 3px solid var(--naranja);
+    outline-offset: 3px;
+}
+
+/* enlace de saltar al contenido */
+.saltar{
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.saltar:focus{
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    width: auto;
+    height: auto;
+    padding: 0.75rem 1rem;
+    background-color: white;
+    border: 2px solid var(--azul);
+    z-index: 9999;
+}
+
+a{
+    color: var(--azul);
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
