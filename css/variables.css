@@ -10,8 +10,8 @@
   --borde: #c9ced9;
 
   /* aqui van la tipografia de amac */
-  --fuente-titulos: "Baskervville", Arial, sans-serif;
-  --fuente-texto: "Work Sans", Arial, sans-serif;
+  --fuente-titulos: "Baskervville", system-ui, -apple-system, sans-serif;
+  --fuente-texto: "Work Sans", system-ui, -apple-system, sans-serif;
   --texto-base: 1.125rem;
   --texto-h2: 1.35rem;
   --texto-h1: 2rem;

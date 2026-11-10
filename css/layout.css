@@ -56,12 +56,15 @@
 .menu ul {
   display: flex;
   list-style: none;
+  justify-content: space-around;
+  align-items: center;
   padding: 0;
   margin: 0;
 }
 
 .menu li {
   flex: 1;
+  text-align: center;
 }
 
 .menu a {
@@ -74,17 +77,18 @@
   min-height: 3.5rem;
   font-size: 0.75rem;
   font-weight: bold;
-  color: var(--azul);
+  color: var(--gris-texto);
   text-decoration: none;
   white-space: nowrap;
 }
 
 .menu img {
-  display: block;
-  width: 24px;
-  height: 24px;
-  margin-bottom: 0.2rem;
-}
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0.25rem;
+    object-fit: contain;
+  }
 
 .menu a.actual {
   color: var(--naranja-texto);
@@ -126,6 +130,14 @@
   margin: 0;
 }
 
+.titulo-azul .contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: var(--espacio-m);
+}
+
+
+
 /* contenido principal */
 .principal {
   padding-block: var(--espacio-l);
@@ -162,10 +174,18 @@
   padding: 0.4rem 0;
 }
 
+.principal{
+    padding-block: var(--espacio-l);
+  }
+
 /* media queries */
 @media (min-width: 768px) {
   .principal {
-    padding-bottom: var(--espacio-l); /* Restablece margen en escritorio */
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: var(--espacio-l);
+    align-items: start;
+    padding-bottom: var(--espacio-l); 
   }
 
   .pie {
@@ -174,6 +194,7 @@
 
   /* La barra de navegación sube al header */
   .menu {
+    background-color: white;
     position: static;
     background: transparent;
     border-top: none;
@@ -184,16 +205,13 @@
   }
 
   .menu a {
-    color: white;
+    color: var(--gris-texto);
     font-size: var(--texto-base);
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 0.5rem;
     min-height: auto;
     flex-direction: row;
-  }
-
-  /* Oculta los iconos de navegación para escritorio sobre el fondo azul */
-  .menu img {
-    display: none;
+    justify-content: center;
+    text-decoration: none;
   }
 
   .menu a.actual {

@@ -7,7 +7,7 @@
 }
 
 html{
-    font-size: var(--texto-base);
+    font-size: 112.5%;
     font-family: var(--fuente-texto);
     color: var(--azul);
     scroll-behavior: smooth;
@@ -57,4 +57,9 @@ a{
 img{
     max-width: 100%;
     height: auto;
+    object-fit: contain;
+}
+
+input, select, textarea, button {
+  font-family: var(--fuente-base);
 }

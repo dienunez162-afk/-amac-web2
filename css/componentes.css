@@ -45,6 +45,12 @@
     color: var(--azul);
 }
 
+.boton-borde{ 
+    background-color: white;
+    color: var(--azul);
+    border: 2px solid var(--borde);
+}
+
 .boton[disabled] {
   opacity: 0.55;
   cursor: not-allowed;
@@ -172,6 +178,8 @@
 
 .campo label{
     font-weight: bold;
+    font-family: var(---fuente-texto);
+    font-size: var(--texto-base);
 }
 
 .campo input, .campo textarea, .campo select{
@@ -181,6 +189,11 @@
     border: 1px solid var(--borde);
     border-radius: var(--radio);
     font-size: var(--texto-base);
+}
+
+.campo textarea{
+    min-height: 100px;
+    resize: vertical;
 }
 
 fieldset{
@@ -200,16 +213,18 @@ legend {
   border-radius: var(--radio);
   padding: var(--espacio-m);
   margin-block: var(--espacio-m);
+  font-family: var(---fuente-texto);
 }
 
 .panel summary, details summary{
     font-weight: bold;
     cursor: pointer;
     font-size: var(---texto-base);
+    font-family: var(---fuente-texto);
     color: var(--azul);
 }
 
-.panel-contenido{
+.panel-contenido, details > div{
     display: flex;
     flex-direction: column;
     gap: var(--espacio-m);
@@ -253,6 +268,7 @@ legend {
 .guardar img { 
     width: 24px; 
     height: 24px; 
+    object-fit: contain;
 }
 
 /* carrusel */
@@ -278,6 +294,7 @@ legend {
 .seccion-detalle h2 {
   font-size: var(--texto-h2);
   margin-bottom: var(--espacio-s);
+  font-family: var(--fuente-titulos);
 }
 
 .seccion-detalle ul,
@@ -341,8 +358,50 @@ legend {
   text-decoration: underline;
 }
 
+/*prospectos */
+.prospecto {
+  background-color: white;
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: var(--espacio-l);
+  margin-bottom: var(--espacio-m);
+}
+
+.prospecto h4 {
+  font-family: var(--fuente-titulos);
+  font-size: var(--texto-h2);
+  margin-bottom: var(--espacio-s);
+}
+
+.prospecto p {
+  margin-bottom: var(--espacio-s);
+}
+
+.acciones {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-s);   
+  margin-top: var(--espacio-m);
+}
+
+.acciones .boton {
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .imagen-carrusel {
     flex-basis: 45%;
+  }
+  
+  .acciones {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--espacio-m);
+  }
+
+  .acciones .boton {
+    width: auto;
+    flex: 1;
   }
 }
