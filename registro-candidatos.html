@@ -4,15 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro de candidato | AMAC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville&amp;family=Work+Sans:wght@400;700&amp;display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
 </head>
 <body>
-  <a href="#principal">Saltar al contenido</a>
-  <header>
-    <div>
-      <a href="index.html"><img src="img/logo.png" alt="Ir al inicio" width="103" height="38"></a>
-      <a href="tel: ">Ayuda: 8100000000</a>
-      <nav aria-label="Navegación principal">
+  <a class="saltar" href="#principal">Saltar al contenido</a>
+  <header class="encabezado">
+    <div class="contenedor fila">
+      <a class="logo" href="index.html"><img src="img/logo.png" alt="Ir al inicio" width="103" height="38"></a>
+      <a class="ayuda" href="tel: ">Ayuda: 8100000000</a>
+      <nav class="menu" aria-label="Navegación principal">
         <ul>
           <li><a href="index.html"><img src="img/empleos.svg" alt="">Empleos</a></li>
           <li><a href="mis-solicitudes.html"><img src="img/solicitudes.svg" alt="">Solicitudes</a></li>
@@ -23,19 +29,19 @@
     </div>
   </header>
 
-  <main id ="principal">
+  <main id ="principal" class="principal contenedor">
     <h1>Registro de candidato</h1>
     <p>* Campo obligatorio</p>
-    <form action="login.html" method="get">
+    <form class="formulario" action="login.html" method="get">
       <details open>
       <summary>1. Datos de contacto</summary>
-      <div>
-        <div>
+      <div class="panel-contenido">
+        <div class="campo">
         <label for="correo">Correo electrónico</label>
         <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
         <p>Se requiere al menos un medio de contacto.</p>
       </div>
-      <div>
+      <div class="campo">
         <label for="celular">Teléfono celular</label>
         <input type="tel" id="celular" name="celular" placeholder="10 dígitos">
       </div>
@@ -48,13 +54,13 @@
       </details>
       <details>
       <summary>2. Contraseña</summary>
-      <div>
-        <div>
+      <div class="panel-contenido">
+        <div class="campo">
         <label for="clave1">Contraseña *</label>
         <input type="password" id="clave1" required>
         <p>Mínimo 8 caracteres</p>
       </div>
-      <div>
+      <div class="campo">
         <label for="clave2">Confirmar contraseña *</label>
         <input type="password" id="clave2" required>
       </div>
@@ -62,24 +68,24 @@
       </details>
       <details>
       <summary>3. Datos personales</summary>
-      <div>
-        <div>
+      <div class="panel-contenido">
+        <div class="campo">
         <label for="nombres">Nombre(s) *</label>
         <input type="text" id="nombres" name="nombres" required>
       </div>
-      <div>
+      <div class="campo">
         <label for="paterno">Apellido paterno *</label>
         <input type="text" id="paterno" name="paterno" required>
       </div>
-      <div>
+      <div class="campo">
         <label for="materno">Apellido materno</label>
         <input type="text" id="materno" name="materno">
       </div>
-      <div>
+      <div class="campo">
         <label for="edad">Edad *</label>
         <input type="number" id="edad" name="edad" required>
       </div>
-      <div>
+      <div class="campo">
         <label for="sexo">Sexo</label>
         <select id="sexo" name="sexo">
           <option>Mujer</option>
@@ -87,7 +93,7 @@
           <option>Prefiero no decir</option>
         </select>
       </div>
-      <div>
+      <div class="campo">
         <label for="estudios">Máximo nivel de estudios</label>
         <select id="estudios" name="estudios">
           <option>Primaria</option>
@@ -101,12 +107,12 @@
       </details>
       <details>
       <summary>4. Dirección</summary>
-      <div>
-        <div>
+      <div class="panel-contenido">
+        <div class="campo">
         <label for="calle">Calle y número *</label>
         <input type="text" id="calle" name="calle" required>
       </div>
-      <div>
+      <div class="campo">
         <label for="colonia">Colonia *</label>
         <input type="text" id="colonia" name="colonia" required>
       </div>
@@ -114,8 +120,8 @@
       </details>
       <details>
       <summary>5. Experiencia laboral</summary>
-      <div>
-        <div>
+      <div class="panel-contenido">
+        <div class="campo">
         <label for="exp">Describe tu experiencia laboral</label>
         <textarea id="exp" name="exp" rows="4"></textarea>
       </div>
@@ -123,8 +129,8 @@
       </details>
       <details>
       <summary>6. Habilidades profesionales</summary>
-      <div>
-        <div>
+      <div class="panel-contenido">
+        <div class="campo">
         <label for="hab">Habilidades profesionales</label>
         <textarea id="hab" name="hab" rows="3"></textarea>
         <p>Ejemplo: Excel, atención a clientes.</p>
@@ -133,20 +139,20 @@
       </details>
       <details>
       <summary>7. Términos y privacidad</summary>
-      <div>
+      <div class="panel-contenido">
         <div><input type="checkbox" id="terminos" name="terminos" required><label for="terminos">Acepto los Términos y Condiciones *</label></div>
         <div><input type="checkbox" id="privacidad" name="privacidad" required><label for="privacidad">Acepto la Política de Privacidad *</label></div>
       </div>
       </details>
-      <button type="submit">Crear mi cuenta</button>
+      <button type="submit" class="boton boton-naranja">Crear mi cuenta</button>
     </form>
   </main>
 
-  <footer>
-    <div>
+  <footer class="pie">
+    <div class="contenedor">
     <p><strong>AMAC</strong> · Bolsa de trabajo para personas adultas mayores.</p>
     <p>¿Dudas o problemas? Llama a un empleado de AMAC: <a href="tel:8100000000">81 0000 0000</a></p>
-    <div>
+    <div class="pie-enlances">
       <a href="index.html">Empleos</a>
       <a href="registro-candidato.html">Crear cuenta</a>
       <a href="https://www.amac.org.mx/donativos">Donativos</a>
